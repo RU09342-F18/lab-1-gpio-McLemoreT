@@ -4,10 +4,7 @@ Now that we have blinked at least 1 LED, what about blinking multiple LEDS at th
 
 # YOU NEED TO CREATE THE FOLLOWING FOLDERS
 * MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
+* MSP(FILL IN WITH WHAT YOU ARE USING)
 
 ## README
 Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
