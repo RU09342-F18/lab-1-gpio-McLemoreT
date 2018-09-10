@@ -36,7 +36,7 @@ When you submit your code, I will be looking for four (4) folders with the follo
 * Multiple Blink
 * Button Blink
 * Off_Board Blink
-Each of these will need their .c and README files. There is only 1 README required per assignment, so you should have a total of 4 README's by the end of the lab.
+
 
 
 ### README Files
