@@ -27,3 +27,5 @@ int main(void)
 	        //P1OUT ^= 0x01;                      //Flip P1OUT to be the opposite of what it was before
 	        //for(i = 0; i < 20000; i++);         //A for loop that counts up, basically a delay that occupies CPU cycles
 }
+
+}
