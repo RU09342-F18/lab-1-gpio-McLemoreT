@@ -10,7 +10,7 @@ int main(void)
 	    P1DIR |= 0x65;                          //set P1.0 and P1.6 as an output. Use "|=" so that it does not overwrite unnecessary bits
 
 	    volatile unsigned int i;                //This will not be optimized and removed by the compiler
-	    volatile unsigned int time = 0;                //This will not be optimized and removed by the compiler
+	    volatile unsigned int time = 0;         //This will not be optimized and removed by the compiler
 
 	    while(true){                            //Infinite while loop
 	        if(time % 5000 == 0){
