@@ -7,8 +7,8 @@
 int main(void)
 {
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
-	    P1DIR |= 0x01;                          //set P1.0 as an output. Use "|=" so that it does not overwrite unnecessary bits
-	                                            //Need to set P1.6 direction?
+	    P1DIR |= 0x65;                          //set P1.0 and P1.6 as an output. Use "|=" so that it does not overwrite unnecessary bits
+
 	    volatile unsigned int i;                //This will not be optimized and removed by the compiler
 	    volatile unsigned int time = 0;                //This will not be optimized and removed by the compiler
 
