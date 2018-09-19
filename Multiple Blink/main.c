@@ -14,13 +14,13 @@ int main(void)
 
 	    while(true){                            //Infinite while loop
 	        if(time % 5000 == 0){
-	            //toggle LED A
+	            P1OUT ^= BIT0;
 	            if(time > 7000){
 	                time = 3000;
 	            }
 	        }
 	        if(time % 7000 == 0){
-	            //Toggle LED B
+	            P1OUT ^= BIT6;
 	        }
 	        time ++;
 
