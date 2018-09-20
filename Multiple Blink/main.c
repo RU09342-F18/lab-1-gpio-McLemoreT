@@ -16,7 +16,7 @@ int main(void)
 	        if(time % 5000 == 0){
 	            P1OUT ^= BIT0;
 	            if(time > 7000){
-	                time = 3000;
+	                //time = 3000;
 	            }
 	        }
 	        if(time % 7000 == 0){
