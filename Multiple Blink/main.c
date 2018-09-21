@@ -19,7 +19,7 @@ int main(void)
 	        if(time % 7000 == 0){           //Test if the current value of time is divisible by 7000
 	            P1OUT ^= BIT6;              //If time is divisible by 7000 then flip the value of BIT6 (LED 6)
 	        }
-	        time ++;
+	        time ++;                        //Increase the value of time so that time can "move forward" in this simulation
 }
 
 }
