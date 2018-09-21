@@ -15,17 +15,11 @@ int main(void)
 	    while(1){                            //Infinite while loop
 	        if(time % 5000 == 0){           //Test if the current value of time is divisible by 5000
 	            P1OUT ^= BIT0;              //If time is divisible by 5000 then flip the value of BIT0 (LED 0)
-	            if(time > 7000){
-	                //time = 3000;
-	            }
 	        }
 	        if(time % 7000 == 0){           //Test if the current value of time is divisible by 7000
 	            P1OUT ^= BIT6;              //If time is divisible by 7000 then flip the value of BIT6 (LED 6)
 	        }
 	        time ++;
-
-	        //P1OUT ^= 0x01;                      //Flip P1OUT to be the opposite of what it was before
-	        //for(i = 0; i < 20000; i++);         //A for loop that counts up, basically a delay that occupies CPU cycles
 }
 
 }
