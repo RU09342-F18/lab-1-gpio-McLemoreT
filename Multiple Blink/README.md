@@ -7,8 +7,11 @@
 +-------------------------------------+
 
 Overview:
-		The purpose of this code is to blink two LEDs on a regular un-timed interval. This interval is based on the amount of times it takes the MSP430G2 chip to calculate 20,000 
-	additions on a given variable. The two LEDs are set to blink out of sync, but will every now and then blink at the same time due to the nature of how timings works.
+		The purpose of this code is to act as a light switch for an LED using only one button. The LED starts off and then can be "Switched" on using the on board button. By pushing 
+	the button the LED will turn on and remain on. Pushing the button again will turn off the LED. You can repeat these steps as many times as the user wishes.
 Code:
-		LED 0 is connected to Port 1.0 on the test board and is set as an output. LED 1 is connected to port 1.6. These ports are opened in the code by calling the decimal number "65"
-	which in binary would be "0100 0001" (Notice how the 0th and 6th bit are both "1"). Since these is the only active element in the code, this is the only input and/or output.
+		The code starts off by defining certain Bits (Bit0, and Bit3) as more relevant names in an attempt to increase the readability of the code. The next thing the program does is
+	set up it's environment. The ports are defined as either inputs or outputs and the default setting for both ports are both set. In this case, the Button is the only input, and the
+	LED is the only output. The default value of the Button is "1" and the default value of the LED is "0" The next thing the code does is enter an infinite while loop that continuously
+	polls the button to see if it has been pressed. On a press the value of a boolean in the code is reversed, as to keep track of whether the light is on or off. Next, depending on 
+	the current state, the light may switch it's current value.
