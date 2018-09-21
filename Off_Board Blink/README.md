@@ -4,6 +4,10 @@
 |									  | 
 | Code				line:  12         |
 |									  |
+| Video				line:  20		  |
+|	Button Blink	line:  24		  |
+|	Multi  Blink	line:  25		  |
+|									  |
 +-------------------------------------+
 
 Overview:
@@ -15,3 +19,7 @@ Code:
 	LED is the only output. The default value of the Button is "1" and the default value of the LED is "0" The next thing the code does is enter an infinite while loop that continuously
 	polls the button to see if it has been pressed. On a press the value of a boolean in the code is reversed, as to keep track of whether the light is on or off. Next, depending on 
 	the current state, the light may switch it's current value.
+Video:
+	Two demo videos are available to watch the LED blink Off-board
+		Button Blink: https://www.youtube.com/watch?v=oPRK08OQXHM&feature=youtu.be
+		Multi  Blink: https://www.youtube.com/watch?v=rAFmSIJsGD4&feature=youtu.be
